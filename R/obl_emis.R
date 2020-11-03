@@ -1,3 +1,23 @@
+#' Funkcja obliczajaca wskaznik emisji la danych na podstawie podanych,
+#' zaimportowanych parametrow
+#'
+#' @param dane char
+#' @param kategoria char
+#' @param paliwo char
+#' @param euro char
+#' @param technologia char
+#' @param mode char
+#' @param substancja char
+#'
+#' @return
+#'
+#'
+#' @export
+#'
+#'
+#' @examples
+#' obl_emis() %>% glimpse()
+#'
 obl_emis <- function(dane = input,
                      kategoria = "Passenger Cars",
                      paliwo = "Petrol",
