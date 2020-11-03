@@ -7,8 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "w.przewoznik@student.agh.edu.pl",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Pakiet ma na celu obliczanie wartosci emisji, 
-w zaleznosci od podanych parametrow. Zwraca gotowa warosc emisji.
+Description: Pakiet ma na celu obliczanie wartosci emisji, w zaleznosci od podanych parametrow. Zwraca gotowa warosc emisji.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

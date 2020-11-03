@@ -39,11 +39,10 @@ obl_emis <- function(dane = input,
 
   out <- dplyr::inner_join(x = out, y = input, by = "Segment")
 
-  out <- out %>%
-    dplyr::mutate(Emisja = Nat * ((Alpha * Procent ^ 2 + Beta * Procent + Gamma + (Delta/Procent))/
-                             (Epsilon * Procent ^ 2 + Zita * Procent + Hta) * (1-Reduction))
-    ) %>%
-    dplyr::select(Category, Fuel, Euro.Standard, Technology, Pollutant, Mode, Segment, Nat, Emisja)
+    dplyr::mutate(out, Emisja = Nat * ((Alpha * Procent ^ 2 + Beta * Procent + Gamma + (Delta/Procent))/
+                             (Epsilon * Procent ^ 2 + Zita * Procent + Hta) * (1-Reduction)))
+
+    dplyr::select(out, Category, Fuel, Euro.Standard, Technology, Pollutant, Mode, Segment, Nat, Emisja)
 
   return(out)
 
