@@ -9,14 +9,15 @@
 #' @param mode char
 #' @param substancja char
 #'
-#' @return
+#' @return double
 #'
 #'
 #' @export
 #'
 #'
 #' @examples
-#' obl_emis() %>% glimpse()
+#' obl_emis() -> tmp
+#' tmp %>% glimpse()
 #'
 obl_emis <- function(dane = input,
                      kategoria = "Passenger Cars",
