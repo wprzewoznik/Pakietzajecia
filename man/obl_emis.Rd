@@ -31,13 +31,14 @@ obl_emis(
 \item{substancja}{char}
 }
 \value{
-
+double
 }
 \description{
 Funkcja obliczajaca wskaznik emisji la danych na podstawie podanych,
 zaimportowanych parametrow
 }
 \examples{
-obl_emis() \%>\% glimpse()
+#obl_emis() -> tmp
+#tmp \%>\% glimpse()
 
 }
