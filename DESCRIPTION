@@ -17,3 +17,5 @@ Imports:
     base,
     dplyr,
     tibble
+Suggests: 
+    testthat
